@@ -19,7 +19,7 @@ const CertificationList: React.FC = () => {
     };
 
     return (
-        <div className="p-4 bg-[#F9F9F9] rounded-lg shadow-md">
+        <div className="p-4 bg-slate-950 rounded-lg shadow-md mb-4">
             <div className="mb-4">
                 <input
                     type="text"

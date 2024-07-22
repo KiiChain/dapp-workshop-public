@@ -26,32 +26,32 @@ const CertificationForm: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="p-6 bg-slate-800 rounded-lg shadow-md space-y-4">
+        <form onSubmit={handleSubmit} className="p-6 bg-slate-950 rounded-lg shadow-md space-y-4">
             <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2">Id:</label>
+                <label className="block text-gray-50 text-sm font-bold mb-2">Id:</label>
                 <input
                     type="number"
                     value={id}
                     onChange={e => setId(e.target.value)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-50 leading-tight focus:outline-none focus:shadow-outline"
                 />
             </div>
             <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                <label className="block text-gray-50 text-sm font-bold mb-2">Name:</label>
                 <input
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-50 leading-tight focus:outline-none focus:shadow-outline"
                 />
             </div>
             <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <label className="block text-gray-50 text-sm font-bold mb-2">Email:</label>
                 <input
                     type="text"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-50 leading-tight focus:outline-none focus:shadow-outline"
                 />
             </div>
 

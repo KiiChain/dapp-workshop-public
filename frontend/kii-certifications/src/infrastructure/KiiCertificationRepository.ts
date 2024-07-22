@@ -4,8 +4,7 @@ import { ICertificationRepository } from "../domain/interfaces/ICertificationRep
 import { ethers } from "ethers";
 import { Certification } from "../domain/models/Certification";
 import contractABI from "../assets/Certifications.json"
-// import dotenv from "dotenv"
-// dotenv.config()
+
 
 const CONTRACT_ADDRESS = "0x1bee4B2b613f77C34ccF9448F90Fd3600bE85caa";
 const CONTRACT_ABI = contractABI.abi;
@@ -40,10 +39,6 @@ export class KiiCertificationRepository implements ICertificationRepository {
         return certification;
     }
 
-    // async findAll(): Promise<Certification[]> {
-    //     const certificationsFromChain = await this.contract.getCertifications();
-    //     return certificationsFromChain.map((cert: any) => new Certification(cert.id.toString(), cert.name, cert.email, cert.isValid));
-    // }
 
     async findById(id: string): Promise<Certification> {
         const certificationFromChain: Certification = await this.contract.getCertification(id);
